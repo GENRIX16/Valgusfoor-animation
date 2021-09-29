@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+
+.container{
+    border: 3px solid #73AD21;
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    border-color: blue;
+    text-align: center;
+}
+
+.dot1 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    animation: dot1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes dot1{
+    0% {top: -150px}
+    100% {top: 0;}
+}
+
+.dot2 {
+height: 200px;
+width: 200px;
+background-color: rgb(238, 255, 0);
+border-radius: 50%;
+display: inline-block;
+position: relative;
+animation: dot2;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes dot2{
+    0% {opacity: 0}
+    100% {bottom: 1;}
+}
+
+.dot3 {
+height: 200px;
+width: 200px;
+background-color: rgb(8, 251, 0);
+border-radius: 50%;
+display: inline-block;
+position: relative;
+animation: dot3  ;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+transform: rotateY(150deg);
+}
+
+@keyframes dot3{
+    to { transform: rotateY(360deg); }
+}
